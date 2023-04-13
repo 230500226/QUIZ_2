@@ -16,17 +16,9 @@
 //type [member_name] : width
 //.tag name;
 /************* MAIN FUNCTION**************/
-void swap(int *a, int *b);
-int main() {
-  int m = 25; int n = 100;
-  printf("m is %d, n is %d\n", m, n);
-  swap(&m, &n);
-  printf("m is %d, n is %d\n", m, n);
-  return 0;
-  }
-void swap(int *a, int *b) {
-  int temp;
-  temp = *a;
-  *a = *b;
-  *b = temp;
-  }
+int main(){
+    for(int i=0; i<5;i++){
+        int a = 4;
+        printf("%d ",a);
+    }
+return 0;}

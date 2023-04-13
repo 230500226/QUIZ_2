@@ -16,17 +16,20 @@
 //type [member_name] : width
 //.tag name;
 /************* MAIN FUNCTION**************/
-void swap(int *a, int *b);
-int main() {
-  int m = 25; int n = 100;
-  printf("m is %d, n is %d\n", m, n);
-  swap(&m, &n);
-  printf("m is %d, n is %d\n", m, n);
-  return 0;
-  }
-void swap(int *a, int *b) {
-  int temp;
-  temp = *a;
-  *a = *b;
-  *b = temp;
-  }
+ int * build_array();
+int main()
+{
+    int *a, k;
+    a = build_array();
+    for (k = 0; k < 10; k=k+2)
+        printf("%d\n", a[k]);
+
+    char *c = "1";
+    if(c=="2"){printf("w");}else{printf("l");}
+    return 0;
+}
+int * build_array()
+{
+    static int Tab[10]= {1,2,3,4,5,6,7,8,9,10};
+    return Tab;
+}

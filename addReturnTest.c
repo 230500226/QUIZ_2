@@ -16,17 +16,19 @@
 //type [member_name] : width
 //.tag name;
 /************* MAIN FUNCTION**************/
-void swap(int *a, int *b);
-int main() {
-  int m = 25; int n = 100;
-  printf("m is %d, n is %d\n", m, n);
-  swap(&m, &n);
-  printf("m is %d, n is %d\n", m, n);
-  return 0;
-  }
-void swap(int *a, int *b) {
-  int temp;
-  temp = *a;
-  *a = *b;
-  *b = temp;
-  }
+
+void add(int x,int y);
+int main()
+    {
+        int a, b;
+        printf("enter value: ");
+        scanf("%d%d",&a,&b);
+        add(a,b);
+        return 0;
+    }
+void add(int x,int y)
+    {
+        int z;
+        z=x+y;
+        printf ("The sum = %d",z);
+    } 
